@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant:ital,wght@0,300;1,300&family=Fleur+De+Leah&family=Rokkitt&display=swap&family=Handlee&display=swap');
+
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant', serif;
+font-family: 'Fleur De Leah', cursive;
+font-family: 'Rokkitt', serif;
+font-family: 'Handlee', cursive;
+
+orchid pink: dbb1bc
+Thistle: d3c4e3
+Magenta Haze: 932f6d
+Dark Purple: 420039
+Mauve: dec0f1
+Amarath Pink: dd9ac2
+
+Periwinkle: d8dcff
+
+Orchid: d664be
+Plum: 934683
+Lavendar Pink: e6aace
+
+/*Presets*/
+*{
+    font-family: 'Rokkitt', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Cormorant', sans-serif;
+}
+
+h4{
+   font-family: 'Handlee', cursive;
+    text-decoration: underline;
+}
+.bg-primary{
+    background-color: #e6aace!important;
+}
+
+.bg-secondary{
+    background-color: #934683!important;
+}
+
+.bg-background{
+    background:#f0d2ee;
+}
+
+.btn-light{
+    background-color: #f0d2ee;
+    border: none;
+}
+
+
+.tc{
+    text-align: center;
+}
+
+
+/*Structure*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#line{
+	border-right:1px solid #000;
+}
+
+
+.navsocial{
+    display: inline-block;
+    list-style: none;
+
+}
+
+.verticalcenter {
+    display: flex;
+    align-items: center;
+}
+
+.verticalright {
+    display:flex;
+    align-items:center;
+}
+.flavorsmenu{
+	background:#f0d2ee; 
+    padding:10px;
+    
+}
+#ingredients td{
+    font-family: 'Handlee', cursive;
+    font-size:20px;
+    padding: 10px;
+}
+#ingredients td:first-child{
+/*	border-right:1px solid #000;*/
+    width: 250px;
+}
+
+
+#ingredients td{
+	padding:3px;
+}
+

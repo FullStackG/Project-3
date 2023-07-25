@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel= "stylesheet" href= "assets/css/style.css">
+        
+        <style>
+        #submission{
+            background:url(assets/img/cakebythebox.jpg);
+            background-size:cover;
+            background-position: center;
+        }
+        </style>
+    </head>
+    
+<body class="bg-background">
+<!--- Navigation --->
+    <nav class="navbar navbar-expand-lg p10 py-0">
+        <div class="container-fluid">
+                <img src= "assets/img/logobanner.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+    </nav>
+<!-- CakeBox Submission Form -->  
+    <section class="container-fluid bg-secondary py-5" id="submission">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 bg-primary p-5">
+                    <h1>CakeByTheBox <br>
+                        COMING SOON!</h1>
+                    <p>Be the first to know! Subscribe to our mailing list today to get shop updates and access to exclusive promotions.Be the first to know! </p>
+                      <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nm">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="em">
+                      </div>
+                      <button type="submit" class="btn btn-light" id="inquirysubmit" data-bs-toggle="modal" data-bs-target="#submitreceipt">Subscribe</button>
+
+                </div>
+            </div>
+        </div>
+    </section>  
+
+<!-- Gallery -->        
+        <section class=" bg-secondary container text-center p-2">
+            <div class="container row align-items-center">
+                <h2>Custom Cakes For Every Event!</h2>
+            </div>
+<!-- Gallery Photos -->
+        <div class= "container row align-items-center">
+            <div class="col-md-3">
+                <div>
+                    <img src="assets/img/wedding.jpg">
+                        <h2>Wedding Cakes</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img src="assets/img/birthday.jpg">
+                        <h2>Birthday Cakes</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img src="assets/img/3D.jpg">
+                        <h2>3D Cakes</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div>
+                    <img src="assets/img/cupcakes.jpg">
+                        <h2>Cupcakes</h2>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+<!-- Info -->       
+        <section class= "row bg-primary align-items=center container p-3">
+            <div  id="line" class= "col-md-4">
+                <div class= "text-center">
+                 <h3>SprinkledByG</h3>
+                    <p>Brooklyn, New York <br>
+                    Sprinkledbyg@gmail.com<br>
+                    929-502-9015</p>
+                </div>
+            </div>
+            <div id="line" class= "col-md-4">
+                <div class= "text-center">
+                 <h3>How Did We Do?</h3>
+                    <p>Share your experience with us at:<br>
+                        sprinkledbyg@gmail.com<br>
+                        Feel free to send us your event photos!
+                    </p>
+                </div>
+            </div >
+            <div class= "col-md-4">
+                <div class= "text-center">
+                    <h3>Get Social With Us!</h3>
+                        <nav>
+                            <ul class= "btn nav justify-content-center gap-2">
+                                <li><a href= "https://www.tiktok.com/@sprinkledbyg?is_from_webapp=1&sender_device=pc" target="_blank" class= "btn btn-light">Tiktok</a></li>
+                                <li><a class= "btn btn-light">Instagram</a></li>
+                                <li><a class= "btn btn-light">Facebook</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </section>
+<!-- Copyright -->        
+        <footer class= "tc">
+            <div>
+              <img src= "assets/img/logobanner.png">
+            </div>
+            <div>
+                <p>&copy; 2023 Copyright. All rights reserved.</p>
+            </div>
+
+        </footer>
+        
+<!-- Modal -->
+<div class="modal fade" id="submitreceipt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Thank You For Subscribing!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>We received your information.</p>
+        <p>Name: <span id="nmval">Jane Doe</span></p>
+        <p>Email: <span id="emval">JaneDoe@gmail.com</span></p>
+      </div>
+    </div>
+  </div>
+</div>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="assets/js/script.js"></script>    
+    </body>
+    
+    
+    </html>

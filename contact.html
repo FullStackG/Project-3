@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Order</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel= "stylesheet" href= "assets/css/style.css">
+    
+    </head>
+ <!-- Nav -->    
+    <body class="bg-background">
+        <nav class="navbar navbar-expand-lg p10 py-0">
+              <div class="container-fluid">
+
+                    <img src= "assets/img/logobanner.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+  
+<!--Order Form -->      
+        <section class="container verticalcenter bg-primary p-5">
+            <div class="col-md-5">   
+                <div class="#">
+                    <h3>Custom Order Inquiry Form</h3>
+                    <br>
+                    <form method="post" action="dh.php">                     
+                        <label for="f1">Full Name<br />
+                            <input id="f1" type="text" name="name" placeholder="First & Last..." required/>
+                        </label>
+                        <br>
+                        <br />
+                        <label for="fb">Email<br />
+                            <input id="fb" type="email" name="email" placeholder="Email@email.com" required/>
+                        </label>
+                        <br>
+                        <br />
+                        <label for="f0">Phone Number<br />
+                            <input id="f0" type="tel" name="phone" placeholder="012-345-6789..." required/>
+                        </label>
+                        <br>
+                        <br>
+                        <label>Event Date<br />
+	                    <input type="date" name="date" required><br>
+                        <br />
+                        </label>
+                        <br>
+                        <br />
+                        <fieldset>
+                            <legend>Delivery or Pickup</legend>
+                            <label for="f5">
+                                <input id="f5" type="radio" name="ordertype" value="delivery">
+                                &nbsp;Delivery </label>
+                            <br />
+                            <label for="f6">
+                                <input id="f6" type="radio" name="ordertype" value="pickup">
+                                &nbsp;Pick Up </label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Check all that apply</legend>
+                            <label for="f7">
+                                <input type="checkbox" name="product[]" value="cake">
+                                &nbsp;Cake </label>
+                            <br />
+                            <label for="f8">
+                                <input type="checkbox" name="product[]" value="cupcakes">
+                                &nbsp;Cupcakes </label>
+                            <br />
+                            <label for="f9">
+                                <input type="checkbox" name="product[]" value="cakepops">
+                                &nbsp;Cakepops </label>
+                            <br />
+                            <label for="f11">
+                                <input type="checkbox" name="product[]" value="cakesicles">
+                                &nbsp;Cakesicles </label>
+                            <br />
+                            <label for="f12">
+                                <input type="checkbox" name="product[]" value="macarons">
+                                &nbsp;Macarons </label>
+                            <br />
+                            <label for="f13">
+                                <input type="checkbox" name="product[]" value="other">
+                                &nbsp;Other </label>
+                    
+                         </fieldset>
+                            <br>
+                            <label for="f3">Tell me more about your event!<br />
+                            <textarea id="f3" name="details" placeholder="Add more details..."></textarea>
+                        </label>
+                        
+                        <br>
+                            <input type="submit" value="Submit" id="submit">
+                       </form>
+                </div>
+            </div>
+            <div id="log">
+            </div>
+
+           
+            <div class="flavorsmenu p-5">
+                <img src="assets/img/logobanner.png" class="mx-auto d-block">
+                
+              <br>
+                <h4 class="tc">Signature Flavors</h4>
+               <table  class="verticalcenter" id="ingredients" cellspacing="0">
+		              <tbody>
+                                <tr>
+                                    <td>&#9633; Vanilla
+                                    <br> 
+                                    &#9633; Chocolate 
+                                    <br> 
+                                    &#9633; Sprinkled By G
+                                    <br>
+                                    &#9633; Cookies and Cream
+                                    <br> 
+                                    &#9633; Red Velvet
+                                    
+                                    <td>&#9633; Blue Velvet
+                                    <br>
+                                    &#9633; Carrot
+                                    <br>
+                                    &#9633; Lemon
+                                    <br>
+                                    &#9633; Coconut
+                                    <br>
+                                    &#9633; Guava
+                                    </td>
+                                </tr>
+                      </tbody>
+	            </table>
+                <br>
+                <br>
+                <h4 class="tc">Buttercream Fillings</h4>
+                <table  class="verticalcenter" id="ingredients" cellspacing="0">
+		              <tbody>
+                                <tr>
+                                    <td>&#9633; Vanilla
+                                    <br> 
+                                    &#9633; Strawberry 
+                                    <br> 
+                                    &#9633; Chocolate
+                                    <br>
+                                    &#9633; Lemon
+                                  
+                                   
+                                    <td>&#9633; Cookies and Cream
+                                    <br>
+                                    &#9633; Pineapple
+                                    <br>
+                                    &#9633; Coconut
+                                    <br>
+                                    &#9633; Guava
+                                    </td>
+                                </tr>
+                      </tbody>
+                </table>
+                <br>
+                <br>
+                           <h4 class="tc">Premium Fillings</h4>
+                <table  class="verticalcenter" id="ingredients" cellspacing="0">
+		              <tbody>
+                                <tr>
+                                    <td>&#9633; Vanilla Bavarian Cream
+                                    <br> 
+                                    &#9633; Chocolate Bavarian Cream
+                                    <br> 
+                                    &#9633; Dulce de Leche
+                                    <br>
+                                    &#9633; Nutella
+                                    <br> 
+                                    &#9633; Guava
+                                    
+                                    <td>&#9633; Fresh Strawberries
+                                    <br>
+                                    &#9633; Cream Cheese
+                                    <br>
+                                    &#9633; Pineapple
+                                    <br>
+                                    &#9633; Strawberry
+                                    </td>
+                                </tr>
+                        
+                        </tbody>
+	               </table>
+                </div>
+           
+        </section>
+           
+ <!-- CTA -->   
+        <section class="container justify-content-center bg-secondary p-3">
+            <div class="tc">
+                <h2>Be The First To Know About New Products And Sales!</h2>
+                <br>
+                <label>Email
+                    <input type="email" name="eml"><input type="submit" value="Subscribe" class="btn btn-light">
+                </label>    
+            </div> 
+        </section>
+           
+        
+  <!-- Info -->       
+       <section class= "row bg-primary align-items=center container p-3">
+            <div  id="line" class= "col-md-4">
+                <div class= "tc">
+                 <h3>SprinkledByG</h3>
+                    <p>Brooklyn, New York <br>
+                    Sprinkledbyg@gmail.com<br>
+                    929-502-9015</p>
+                </div>
+            </div>
+            <div id="line" class= "col-md-4">
+                <div class= "tc">
+                 <h3>How Did We Do?</h3>
+                    <p>Share your experience with us at:<br>
+                        sprinkledbyg@gmail.com<br>
+                        Feel free to send us your event photos!
+                    </p>
+                </div>
+            </div >
+            <div class= "col-md-4">
+                <div class= "tc">
+                    <h3>Get Social With Us!</h3>
+                        <nav>
+                            <ul class= "btn nav justify-content-center gap-2">
+                                <li><a href= "https://www.tiktok.com/@sprinkledbyg?is_from_webapp=1&sender_device=pc" target="_blank" class= "btn btn-light">Tiktok</a></li>
+                                <li><a class= "btn btn-light">Instagram</a></li>
+                                <li><a class= "btn btn-light">Facebook</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Copyright -->        
+        <footer class= "tc">
+            <div>
+              <img src= "assets/img/logobanner.png">
+            </div>
+            <div>
+                <p>&copy; 2023 Copyright. All rights reserved.</p>
+            </div>
+
+        </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="assets/js/script.js"></script>    
+	    
+    </body>
+    
+    
+    </html>
